@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 const { request } = require('gaxios');
 
 const { PORT =  3000 } = process.env;
