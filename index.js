@@ -10,6 +10,8 @@ const HOST = 'https://www.metaweather.com';
 
 const app = express();
 
+app.use(cors());
+
 app.get('*', async (req, res) => {
     // console.log('req.url', req.url);
     if (req.url.startsWith('/api')) {
